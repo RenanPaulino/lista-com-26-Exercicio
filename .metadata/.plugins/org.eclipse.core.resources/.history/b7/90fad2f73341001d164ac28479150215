@@ -1,0 +1,13 @@
+package br.com.voeairlines.treinamentopoo;
+
+public class Algoritimo20 {
+	
+	int a; int b; int c ;
+	
+	public Algoritimo20(int a, int b, int c) {
+		a = a;
+		b = b;
+		c = c;
+		
+	}
+}

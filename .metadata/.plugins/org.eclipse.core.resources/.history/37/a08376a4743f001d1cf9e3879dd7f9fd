@@ -1,0 +1,11 @@
+package br.com.voeairlines.treinamentopoo;
+
+public class Algoritimo05 {
+	
+	int num;
+	public String numInteiro(int num) {
+		this.num = num;
+		return "O numero informado foi: " + this.num;
+		
+	}
+}

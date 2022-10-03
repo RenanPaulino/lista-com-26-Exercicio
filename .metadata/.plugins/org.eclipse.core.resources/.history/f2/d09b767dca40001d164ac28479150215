@@ -1,0 +1,21 @@
+package br.com.voeairlines.treinamentopoo;
+
+public class Algoritimo14 {
+	
+	private double saldo;
+	
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public double reajuste() {
+		this.saldo = this.saldo * 0.1;
+		System.out.println("O reajuste do saldo de 1% é de: ");
+		return this.saldo;
+	}
+
+}

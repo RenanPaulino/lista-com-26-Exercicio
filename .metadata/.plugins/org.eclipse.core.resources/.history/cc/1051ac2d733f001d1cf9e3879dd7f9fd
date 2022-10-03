@@ -1,0 +1,14 @@
+package br.com.voeairlines.treinamentopoo;
+
+import java.util.Scanner;
+
+public class Algoritimo05 {
+	Scanner leia = new Scanner(System.in);
+	
+	public void numInteiro() {
+		
+		System.out.println("Informe o numero inteiro");
+		int num = leia.nextInt();
+		System.out.println("O numero informado foi: " + num);
+	}
+}

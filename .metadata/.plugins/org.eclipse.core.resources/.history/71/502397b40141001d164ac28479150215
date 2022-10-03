@@ -1,0 +1,26 @@
+package br.com.voeairlines.treinamentopoo;
+
+import java.util.Scanner;
+
+public class Algoritimo16 {
+	Scanner leia = new Scanner(System.in);
+	String nome;
+	public Algoritimo16(String analizaNome) {
+		
+		nome = analizaNome;
+
+		while (nome.length() < 4) {
+			System.out.println("ANALIZANDO O NOME: "+ nome);
+			
+			if (nome.length() >= 4) {
+				System.out.println("O primeiro caracter é " + nome.charAt(0));
+			} else {
+				System.out.println("Nome inválido pois o contem menos de 4 caracteres!");
+				System.out.println("Digite um nome com ao menos 4 caracteres:");
+				nome = leia.nextLine();
+			}
+
+		}
+		return "saida";
+	}
+}

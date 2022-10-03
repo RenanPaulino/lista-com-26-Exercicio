@@ -1,0 +1,129 @@
+package br.com.voeairlines.treinamentopoo;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		Scanner leia = new Scanner(System.in);
+		System.out.println("Professor digit de 1 a 26");
+		int op = leia.nextInt();
+		switch (op) {
+		case 1: {
+			Algoritimo01 alg1 = new Algoritimo01();
+			System.out.println(alg1.imprimirMensagem());
+			break;
+		}
+		case 2: {
+			Algoritimo02 alg2 = new Algoritimo02();
+			System.out.println(alg2.meuNome());
+			break;
+		}
+		case 3: {
+			Algoritimo03 alg3 = new Algoritimo03();
+			System.out.println(alg3.produto());
+			break;
+		}
+		case 4: {
+			Algoritimo04 alg4 = new Algoritimo04();
+			System.out.println(alg4.media());
+			break;
+		}
+		case 5: {
+			Algoritimo05 alg5 = new Algoritimo05();
+
+			System.out.println("Informe o numero inteiro");
+			int num = leia.nextInt();
+			System.out.println(alg5.numInteiro(num));
+			break;
+		}
+		case 6: {
+			Algoritimo06 alg6 = new Algoritimo06();
+
+			System.out.println("Informe dois valores inteiros");
+			int n1 = leia.nextInt();
+			System.out.print("segundo é ...");
+			int n2 = leia.nextInt();
+			System.out.println(alg6.doiNumInteiro(n1, n2));
+			break;
+		}
+		case 7: {
+			Algoritimo07 alg7 = new Algoritimo07();
+			System.out.println("Informe um valor ");
+			int antDepois = leia.nextInt();
+			System.out.println(alg7.antesNumDepois(antDepois));
+			break;
+		}
+		case 8: {
+			Algoritimo08 alg8 = new Algoritimo08();
+			leia.nextLine();
+			System.out.println("Digite Nome, Endereço e Telefone");
+			System.out.print("Nome...");
+			String nome = leia.nextLine();
+			System.out.print("Endereço...");
+			String end = leia.nextLine();
+			System.out.print("Telefone...");
+			String tel = leia.nextLine();
+
+			alg8.dados(nome, end, tel);
+
+			System.out.println(alg8.dadosImprimir());
+			break;
+		}
+		case 9: {
+			Algoritimo09 alg9 = new Algoritimo09();
+
+			System.out.println("Digite primeiro valor");
+			int num1 = leia.nextInt();
+			System.out.println("Digite segundo valor");
+			int num2 = leia.nextInt();
+			System.out.println(alg9.resSoma(num1, num2));
+		}
+		case 10: {
+			Algoritimo10 algo10 = new Algoritimo10();
+
+			System.out.println("Digite primeiro valor");
+			int num1 = leia.nextInt();
+			System.out.println("Digite segundo valor");
+			int num2 = leia.nextInt();
+			System.out.println("O produto de " + num1 + " e " + num2 + " = " + algo10.resProduto(num1, num2));
+		}
+		case 11: {
+			Algoritimo11 algo11 = new Algoritimo11();
+			System.out.println(algo11.tercaParte());
+			break;
+		}
+		case 12: {
+			Algoritimo12 algo12 = new Algoritimo12();
+			System.out.println(algo12.medAritimetica());
+			break;
+		}
+		case 13: {
+			Algoritimo13 algo13 = new Algoritimo13();
+			System.out.println(algo13.medPonderada());
+			break;
+		}
+		case 14: {
+			Algoritimo14 algo14 = new Algoritimo14();
+			System.out.print("Informe o saldo atual:");
+			double saldo = leia.nextDouble();
+			algo14.setSaldo(saldo);
+			System.out.println(algo14.reajuste());
+		}
+		case 15: {
+			System.out.println("Informe o valor do salario minimo: ");
+			double salMinimo = leia.nextDouble();
+			System.out.println("Informe o valor gasto em quilowatts:");
+			double watts = leia.nextDouble();
+
+			Algoritimo15 algo15 = new Algoritimo15(salMinimo, watts);
+			System.out.printf("O valor de cada quilowatts é de %.2f Watts \n", algo15.custoWatts());
+			System.out.printf("O valor da conta R$%.2f \n",algo15.valorConta());
+			System.out.printf("Valor com desconto R$%.2f", algo15.comDesconto());
+			
+		}
+		}
+		leia.close();
+	}
+}

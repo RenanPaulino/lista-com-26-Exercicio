@@ -1,0 +1,27 @@
+package br.com.voeairlines.treinamentopoo;
+
+public class Algoritimo17 {
+	
+	int base;
+	int altura;
+	
+	public Algoritimo17(int b, int a) {
+		base = b;
+		altura = a;
+	}
+	
+	public int perimietro() {
+		int p = 2 * (base * altura);
+		System.out.print("\nO perimetro é: ");
+		return p;
+	}
+	public int area() {
+		int a = base * altura;
+		System.out.print("\nA área é de: ");
+		return a;
+	}
+	public double diagonal() {
+		double d = Math.sqrt((Math.pow(base, 2) + Math.pow(altura, 2)));
+		return d;
+	}
+}

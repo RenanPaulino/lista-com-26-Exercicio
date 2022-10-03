@@ -1,0 +1,21 @@
+package br.com.voeairlines.treinamentopoo;
+
+import java.util.Scanner;
+
+public class Algoritimo12 {
+	
+	Scanner leia = new Scanner(System.in);
+	
+	public double medPonderada() {
+		System.out.println("Digite 4 valores, aperte ENTER para insir cada valor:");
+	//	leia.nextInt();
+		int num1 = leia.nextInt();
+		int num2 = leia.nextInt();
+		int num3 = leia.nextInt();
+		int num4 = leia.nextInt();
+		int mP = ((num1*1)+(num2*2)+(num3*3)+(num4*4))/4;
+		return mP;
+	}
+	
+
+}

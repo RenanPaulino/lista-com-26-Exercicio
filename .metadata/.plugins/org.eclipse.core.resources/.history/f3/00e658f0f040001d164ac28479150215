@@ -1,0 +1,25 @@
+package br.com.voeairlines.treinamentopoo;
+
+import java.util.Scanner;
+
+public class Algoritimo15 {
+
+	Scanner leia = new Scanner(System.in);
+
+	public Algoritimo15() {
+		System.out.println("Informe o valor do salario minimo: ");
+		double salMinimo = leia.nextDouble();
+		System.out.println("Informe o valor gasto em quilowatts:");
+		double watts = leia.nextDouble();
+
+		double valorWatts = (salMinimo / 7) / 100;
+
+		double valorPagar = watts * valorWatts;
+		double valorDescontado = valorPagar * 0.10 - valorPagar;
+		
+		System.out.printf("O valor de cada quilowatts é de %0.2f",valorWatts);
+		System.out.printf("O valor da conta %0.2f",valorPagar);
+		System.out.printf("Valor com desconto %0.2f", valorDescontado);
+	}
+
+}
